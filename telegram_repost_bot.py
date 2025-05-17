@@ -131,7 +131,7 @@ class TelegramPhotoBot:
                     await self.send_media_group(group)
                 
                 # Пауза между сообщениями
-                await asyncio.sleep(10)
+                await asyncio.sleep(14400)
                 
             except Exception as e:
                 print(f"Ошибка: {e}")
@@ -147,7 +147,7 @@ if __name__ == "__main__":
         ],
         'photos_folder': 'photos',
         'bot_token': '7504132147:AAHfZGVdvEbw2LrBhC_aXbVatV-xG41i3ok',
-        'channel_id': '@test_nikita_bots'  # Или числовой ID канала
+        'channel_id': '@body_paint_tattoo'  # Или числовой ID канала
     }
 
     bot = TelegramPhotoBot(**config)
