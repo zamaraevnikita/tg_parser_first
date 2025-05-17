@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 from telegram import Bot, InputMediaPhoto
 from telegram.error import TelegramError
 
+
 class TelegramPhotoBot:
     def __init__(self, html_files, photos_folder, bot_token, channel_id):
         self.html_files = html_files
@@ -130,7 +131,7 @@ class TelegramPhotoBot:
                     await self.send_media_group(group)
                 
                 # Пауза между сообщениями
-                await asyncio.sleep(5)
+                await asyncio.sleep(10)
                 
             except Exception as e:
                 print(f"Ошибка: {e}")
